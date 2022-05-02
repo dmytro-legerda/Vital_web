@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Implement function getSeasonMonths</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <script>
+      function getSeasonMonths(season){
+        let seasonTotal = [];
+        switch (season) {
+
+        case 'winter':
+        seasonTotal = ['December', 'January', 'February'];
+        return seasonTotal;
+        break;
+
+        case 'spring':
+        seasonTotal = ['March', 'April', 'May'];
+        return seasonTotal;
+        break;
+
+        case 'summer':
+        seasonTotal = ['June', 'July', 'August'];
+        return seasonTotal;
+        break;
+
+        case 'autumn':
+        seasonTotal = ['September', 'October', 'November'];
+        return seasonTotal;
+        break;
+
+        default:
+          seasonTotal = '';
+        }
+      }
+    </script>
+  </body>
+</html>
