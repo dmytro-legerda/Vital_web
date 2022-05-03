@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Implement function getSumOfPositiveElements</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <script>
+    let list = [];
+      function getSumOfPositiveElements(list) {
+        let sum = 0;
+        for(let i=0; i<=list.length-1; i++) {
+          if(list[i] < 0) {
+            continue;
+          }
+          if(list[i] !== list[list.length-1] ) {
+            sum = sum + list[i];
+          }
+          if(list[i] === list[list.length-1]) {
+              sum = sum + list[list.length-1];
+          }
+        }
+        return (sum);
+      }
+    </script>
+  </body>
+</html>
