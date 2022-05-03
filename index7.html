@@ -10,17 +10,12 @@
     <script>
 
       function getMaxElement(list) {
-        let maxValue = 0;
+        let maxValue = list[0];
         for(let i=0; i < list.length; i++) {
-          for(let j=1; j < list.length; j++) {
-            if(list[i] === list[list.length - 1]) {
-              break;
-            }
-              if(list[i] > list[j]) {
-                maxValue = list[i];
-              }
+          if(list[i] > maxValue) {
+            maxValue = list[i];
+          }
         }
-      }
         return maxValue;
       }
     </script>

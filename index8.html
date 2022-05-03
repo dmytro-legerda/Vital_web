@@ -8,9 +8,14 @@
   </head>
   <body>
     <script>
-    let list = [];
       function getMinElement(list){
-
+        let minValue = list[0];
+        for(let i=0; i<list.length; i++){
+          if(list[i]<minValue){
+            minValue = list[i];
+          }
+        }
+        return minValue;
       }
     </script>
   </body>
