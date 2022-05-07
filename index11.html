@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Implement Function getDaysFromNewYear</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <script>
+      function getDaysFromNewYear(month, day) {
+        let resultDays = 0;
+        for (let i = 0; i < month; i++) {
+          if (i === 1 || i === 3 ||i === 5 ||i === 7 ||i === 8 ||i === 10 ||i === 12) {
+            resultDays = resultDays + 31;
+          }
+          if (i === 4 || i === 6 ||i === 9 ||i === 11) {
+            resultDays = resultDays + 30;
+          }
+          if (i === 2) {
+            resultDays = resultDays + 28;
+          }
+        }
+        return (resultDays+day);
+      }
+    </script>
+  </body>
+</html>
