@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Implement Function archivator</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <script>
+      function archivator(text) {
+        let textNew = text.toUpperCase();
+        let resultString = "";
+        let numberOfLetters = 1;
+        for (let i = 0; i < textNew.length; i++) {
+          
+          if (textNew.charCodeAt(i) > 64 && textNew.charCodeAt(i) < 91) {
+            if (textNew.charCodeAt(i) === textNew.charCodeAt(i+1)) {
+            numberOfLetters += 1;
+            }
+            else {
+              resultString = resultString + textNew[i] + numberOfLetters;
+              numberOfLetters = 1;
+            }
+          }
+        }
+        return (resultString)
+      }
+    </script>
+  </body>
+</html>
