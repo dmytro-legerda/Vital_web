@@ -1,0 +1,51 @@
+#input_field {
+  margin: auto;
+  display: block;
+  text-align: center;
+  height: 60px;
+  width: 500px;
+  font-size: x-large;
+}
+
+.container{
+  padding-left: 400px;
+  margin: auto;
+}
+
+h3{
+  padding-left: 210px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30;
+  color: green;
+}
+
+#items {
+  font-size: x-large;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.List{
+  padding: 30px;
+  margin-right: 370px;
+  border: 2px solid black;
+  background-color: antiquewhite;
+}
+
+p{
+  display: inline-block;
+  margin-left: 130px;
+}
+
+.active{
+  color: red;
+}
+.completed{
+  color: green;
+}
+
+.summerize{
+  display: block;
+}
